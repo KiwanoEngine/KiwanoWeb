@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/sirupsen/logrus"
 	"net/http"
 
 	"github.com/nomango/KiwanoWeb/modules/settings"
@@ -16,5 +17,7 @@ func main() {
 	routers.Setup(engine)
 
 	server := http.Server{Handler: engine, Addr: ":" + settings.Port}
-	server.ListenAndServe()
+	if err := server.ListenAndServe(); err != nil {
+		logrus.Panicln("Start Gin server failed", err)
+	}
 }

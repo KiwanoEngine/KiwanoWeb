@@ -14,3 +14,6 @@
 # Go vendor
 /vendor/*
 !/vendor/vendor.json
+
+# GoLand
+/.idea/*

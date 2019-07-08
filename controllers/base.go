@@ -12,3 +12,7 @@ func Home(c *gin.Context) {
 		"now": time.Now(),
 	})
 }
+
+func GoPackageService(c *gin.Context) {
+	c.HTML(http.StatusOK, "goPackage.html", nil)
+}
