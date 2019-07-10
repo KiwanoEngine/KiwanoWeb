@@ -23,3 +23,19 @@ body {
 .main-wapper .main-logo {
     width: 33%;
 }
+
+.footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.footer .footer-icons {
+    margin-bottom: 5px;
+}
