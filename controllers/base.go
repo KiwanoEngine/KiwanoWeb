@@ -14,5 +14,9 @@ func Home(c *gin.Context) {
 }
 
 func GoPackageService(c *gin.Context) {
-	c.HTML(http.StatusOK, "goPackage.html", nil)
+	c.HTML(http.StatusOK, "go-package.html", nil)
+}
+
+func GoDemosPackageService(c *gin.Context) {
+	c.HTML(http.StatusOK, "go-demos-package.html", nil)
 }
