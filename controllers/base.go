@@ -2,15 +2,16 @@ package controllers
 
 import (
 	"net/http"
-	"time"
 
 	"github.com/gin-gonic/gin"
 )
 
 func Home(c *gin.Context) {
-	c.HTML(http.StatusOK, "index.html", map[string]interface{}{
-		"now": time.Now(),
-	})
+	c.HTML(http.StatusOK, "index.html", nil)
+}
+
+func GoHome(c *gin.Context) {
+	c.HTML(http.StatusOK, "go-index.html", nil)
 }
 
 func GoPackageService(c *gin.Context) {

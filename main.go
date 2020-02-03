@@ -4,8 +4,8 @@ import (
 	"github.com/sirupsen/logrus"
 	"net/http"
 
-	"github.com/nomango/KiwanoWeb/modules/settings"
-	"github.com/nomango/KiwanoWeb/routers"
+	"github.com/KiwanoEngine/KiwanoWeb/modules/settings"
+	"github.com/KiwanoEngine/KiwanoWeb/routers"
 
 	"github.com/gin-gonic/gin"
 )
