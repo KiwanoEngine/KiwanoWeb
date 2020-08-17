@@ -1,0 +1,61 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    color: #313131;
+}
+
+a {
+    text-decoration: none;
+    color: #313131;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+}
+
+.main-wapper {
+    display: block;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.main-wapper .main-logo {
+    width: 33%;
+}
+
+.gallery .gallery-line {
+    text-align: center;
+    margin: 5px 0 20px;
+}
+
+.gallery .img-wapper {
+    display: inline-block;
+    margin: 0 10px 0;
+}
+
+.gallery .img-wapper img {
+    width: 250px;
+}
+
+.gallery p {
+    font-size: 16px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.footer .footer-icons {
+    margin-bottom: 5px;
+}
