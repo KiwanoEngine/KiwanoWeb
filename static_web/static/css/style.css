@@ -20,10 +20,6 @@ body {
     text-align: center;
 }
 
-.main-wapper .main-logo {
-    width: 55%;
-}
-
 .gallery .gallery-line {
     text-align: center;
     margin: 5px 0 20px;
@@ -58,4 +54,14 @@ body {
 
 .footer .footer-icons {
     margin-bottom: 5px;
+}
+
+.main-wapper .main-logo {
+    width: 400px;
+}
+
+@media screen and (max-width: 900px) {
+    .main-wapper .main-logo {
+        width: 45%;
+    }
 }
