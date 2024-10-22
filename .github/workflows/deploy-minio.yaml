@@ -1,4 +1,4 @@
-name: deploy to minio
+name: Deploy to minio
 
 on:
   push:
@@ -19,10 +19,10 @@ jobs:
     #     npm install
     #     npm run build
 
-    - name: setup aliyun oss
+    - name: Upload to minio
       uses: lovellfelix/minio-deploy-action@v1
       with:
-        endpoint: ${{ secrets.MINIO_ENDPOINT }}
+        endpoint: ${{ vars.MINIO_ENDPOINT }}
         access_key: ${{ secrets.MINIO_ACCESS_KEY }}
         secret_key: ${{ secrets.MINIO_SECRET_KEY }}
         bucket: ${{ vars.MINIO_BUCKET }}
